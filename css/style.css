@@ -169,6 +169,28 @@ a:hover {
   color: red;
 }
 
+.special-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.special-flex img {
+  max-height: 70px;
+}
+
+.special-flex a {
+  color: darkgreen;
+}
+
+.special-flex a:hover {
+  color: red;
+}
+
+.special-flex > * + * {
+  margin-left: 1.5em;
+}
+
 .secret {
   font-family: monospace, sans-serif;
   color: #aaa;
@@ -198,6 +220,15 @@ a:hover {
   }
   h1 {
     font-size: 2em;
+  }
+  h2 {
+    /* font-size: 1.17em; */
+  }
+  .special-flex img {
+    max-height: 100px;
+  }
+  .special-flex > * + * {
+    margin-left: 0.5em;
   }
   .text {
     max-width: 100%;

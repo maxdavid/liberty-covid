@@ -25,12 +25,16 @@
   align-items: center;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-device-width: 480px) {
   .menu-vertical-flex {
     width: 100%;
   }
 
   .menu-vertical-flex img {
-    max-height: 500px;
+    max-height: 600px;
+  }
+
+  .menu-vertical-flex hr {
+    width: 50%;
   }
 }

@@ -194,7 +194,7 @@ a:hover {
 .secret {
   font-family: monospace, sans-serif;
   color: #aaa;
-  margin-top: 10em;
+  margin-top: 12em;
   position: relative;
   bottom: -10px;
 }
@@ -260,5 +260,8 @@ a:hover {
   }
   .note {
     font-size: 1.6rem;
+  }
+  .oswald img {
+    width: 80%;
   }
 }

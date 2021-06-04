@@ -194,7 +194,20 @@ a:hover {
 .secret {
   font-family: monospace, sans-serif;
   color: #aaa;
-  margin: 5em 0;
+  margin-top: 10em;
+  position: relative;
+  bottom: -10px;
+}
+
+.oswald {
+  position: relative;
+  bottom: -10px;
+}
+
+.oswald img {
+  position: relative;
+  bottom: -10px;
+  width: 550px;
 }
 
 @media only screen and (max-device-width: 480px) {

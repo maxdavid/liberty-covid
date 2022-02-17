@@ -191,6 +191,52 @@ a:hover {
   margin-left: 1.5em;
 }
 
+.happy-hour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 8px 0;
+  padding: 16px;
+  width: 100vw;
+}
+.happy-hour h3 {
+  font-size: 2rem;
+}
+.happy-hour img {
+  max-height: 70px;
+  display: none;
+}
+.happy-hour > * + * {
+  margin-left: 1.5em;
+}
+.title-subtitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.happy-hour.active {
+  background: linear-gradient(90deg, #faf1ff, #e8efff, #fff2f1, #ffe8d7);
+  animation: gradientBG 7s ease infinite forwards;
+  background-size: 400% 400%;
+}
+.happy-hour.active img {
+  display: block;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .secret {
   font-family: monospace, sans-serif;
   color: #aaa;
@@ -236,6 +282,19 @@ a:hover {
   }
   h2 {
     /* font-size: 1.17em; */
+  }
+  .happy-hour {
+    margin: 40px 0 52px 0;
+  }
+  .happy-hour.active {
+    margin: 16px 0 28px 0;
+    padding: 32px 0;
+  }
+  .happy-hour h3 {
+    font-size: 4rem;
+  }
+  .happy-hour.active h3 {
+    font-size: 5rem;
   }
   .special-flex img {
     max-height: 100px;

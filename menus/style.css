@@ -40,6 +40,27 @@
   margin-top: 15px;
 }
 
+.menu-vertical-flex .happy-hour .menu-image {
+  display: block;
+  width: 300px;
+}
+.menu-vertical-flex .happy-hour {
+  width: 100vw;
+  align-items: flex-start;
+}
+.menu-vertical-flex .happy-hour .bonus {
+  max-height: 120px;
+}
+.happy-hour.active {
+  display: none;
+}
+.happy-hour.during-happy-hours {
+  display: none;
+}
+.happy-hour.during-happy-hours.active {
+  display: flex;
+}
+
 @media only screen and (max-device-width: 480px) {
   .menu-vertical-flex {
     width: 100%;
@@ -47,6 +68,12 @@
 
   .menu-vertical-flex img {
     max-height: 600px;
+  }
+  .menu-vertical-flex .happy-hour .menu-image {
+    width: 600px;
+  }
+  .menu-vertical-flex .happy-hour .bonus {
+    display: none;
   }
 
   .menu-vertical-flex hr {
